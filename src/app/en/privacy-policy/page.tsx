@@ -38,8 +38,8 @@ export default function PrivacyPolicyEn() {
       <h2 className="text-xl font-semibold mt-6 mb-2">4. Your rights</h2>
       <p className="mb-4">
         You can access, update, or delete your data. To do so, contact us at{" "}
-        <a href="mailto:contact@yoshimyra.com" className="underline">
-          contact@yoshimyra.com
+        <a href="mailto:hello@yoshimyra.com" className="underline">
+          hello@yoshimyra.com
         </a>
         .
       </p>
