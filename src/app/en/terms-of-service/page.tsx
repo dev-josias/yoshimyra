@@ -91,7 +91,7 @@ export default function TermsOfServiceEn() {
               href="mailto:support@yoshimyra.com"
               className="text-blue-600 underline"
             >
-              support@yoshimyra.com
+              hello@yoshimyra.com
             </a>
           </p>
         </div>

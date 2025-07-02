@@ -1,3 +1,5 @@
+import LocalizedLink from "@/components/LocalizedLink";
+
 export default function PricingPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900 p-6">
@@ -27,9 +29,12 @@ export default function PricingPage() {
           <p className="text-2xl font-bold text-[#00C896] mb-4">
             À partir de 600€
           </p>
-          <button className="w-full py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold">
+          <LocalizedLink
+            href="/contact"
+            className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
+          >
             Demander un devis
-          </button>
+          </LocalizedLink>
         </div>
 
         <div className="border rounded-xl p-6 shadow-lg bg-[#E6FCF4] ring-2 ring-[#00C896]">
@@ -47,9 +52,12 @@ export default function PricingPage() {
           <p className="text-2xl font-bold text-[#00C896] mb-4">
             À partir de 2 500€
           </p>
-          <button className="w-full py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold">
+          <LocalizedLink
+            href="/contact"
+            className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
+          >
             Commencer mon projet
-          </button>
+          </LocalizedLink>
         </div>
 
         <div className="border rounded-xl p-6 shadow hover:shadow-lg transition">
@@ -67,9 +75,12 @@ export default function PricingPage() {
           <p className="text-2xl font-bold text-[#00C896] mb-4">
             80€/h ou dès 150€/mois
           </p>
-          <button className="w-full py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold">
+          <LocalizedLink
+            href="/contact"
+            className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
+          >
             Réserver une session
-          </button>
+          </LocalizedLink>
         </div>
       </div>
     </main>

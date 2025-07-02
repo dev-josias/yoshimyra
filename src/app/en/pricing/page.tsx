@@ -1,3 +1,5 @@
+import LocalizedLink from "@/components/LocalizedLink";
+
 export default function PricingPageEn() {
   return (
     <main className="min-h-screen bg-white text-gray-900 p-6">
@@ -25,9 +27,12 @@ export default function PricingPageEn() {
             <li>✅ Quick delivery</li>
           </ul>
           <p className="text-2xl font-bold text-[#00C896] mb-4">From €600</p>
-          <button className="w-full py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold">
+          <LocalizedLink
+            href="/contact"
+            className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
+          >
             Request a quote
-          </button>
+          </LocalizedLink>
         </div>
 
         <div className="border rounded-xl p-6 shadow-lg bg-[#E6FCF4] ring-2 ring-[#00C896]">
@@ -43,9 +48,12 @@ export default function PricingPageEn() {
             <li>✅ Admin dashboard</li>
           </ul>
           <p className="text-2xl font-bold text-[#00C896] mb-4">From €2,500</p>
-          <button className="w-full py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold">
+          <LocalizedLink
+            href="/contact"
+            className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
+          >
             Start your project
-          </button>
+          </LocalizedLink>
         </div>
 
         <div className="border rounded-xl p-6 shadow hover:shadow-lg transition">
@@ -63,9 +71,12 @@ export default function PricingPageEn() {
           <p className="text-2xl font-bold text-[#00C896] mb-4">
             €80/h or from €150/mo
           </p>
-          <button className="w-full py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold">
+          <LocalizedLink
+            href="/contact"
+            className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
+          >
             Book a session
-          </button>
+          </LocalizedLink>
         </div>
       </div>
     </main>
