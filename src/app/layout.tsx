@@ -104,8 +104,23 @@ export default function RootLayout({
           </header>
           {children}
 
-          <footer className="py-6 border-t text-center text-sm text-gray-500 bg-white">
-            © {new Date().getFullYear()} Yoshimyra. All rights reserved.
+          <footer className="py-6 border-t text-center text-sm text-gray-500 bg-white space-y-2">
+            <div>
+              © {new Date().getFullYear()} Yoshimyra. All rights reserved.
+            </div>
+            <div className="flex justify-center items-center space-x-4">
+              <span className="font-medium">
+                D-U-N-S Number: <strong>854869663</strong>
+              </span>
+              <a
+                href="https://www.dnb.com/business-directory/company-profiles.yoshimyra.be5f769bd170fc72eae7ecf9b853c61e.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-black transition"
+              >
+                View on D&B
+              </a>
+            </div>
           </footer>
         </main>
       </body>
