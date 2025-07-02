@@ -6,11 +6,18 @@ const LanguageSwitch = () => {
   const pathname = usePathname();
 
   return pathname.includes("en") ? (
-    <Link href="/" className="hover:underline text-sm">
+    <Link
+      href={
+        pathname === "/en"
+          ? pathname.replace("en", "")
+          : pathname.replace("/en", "")
+      }
+      className="hover:underline text-sm"
+    >
       FR
     </Link>
   ) : (
-    <Link href="/en" className="hover:underline text-sm">
+    <Link href={`/en${pathname}`} className="hover:underline text-sm">
       EN
     </Link>
   );

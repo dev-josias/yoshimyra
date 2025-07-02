@@ -1,105 +1,68 @@
-export default function TermsOfServiceEn() {
+export default function TermsEn() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 p-6">
-      <section className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-[#1B4F72] mb-2">
-          Terms of Service
-        </h1>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          By using our services, you agree to the terms outlined below. Please
-          read them carefully.
-        </p>
-      </section>
+    <main className="max-w-3xl mx-auto py-16 px-4 text-gray-800">
+      <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
 
-      <section className="max-w-4xl mx-auto space-y-8">
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            1. About Yoshimyra
-          </h2>
-          <p className="text-gray-700">
-            Yoshimyra is a company focused on designing and developing digital
-            solutions including mobile apps, web platforms, SaaS tools, and
-            custom software. Our products aim to deliver value, efficiency, and
-            exceptional user experience.
-          </p>
-        </div>
+      <p className="mb-4">Last updated: July 2, 2025</p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            2. Permitted Use
-          </h2>
-          <p className="text-gray-700">
-            Our products are to be used for lawful personal or professional
-            purposes. Any attempt at hacking, reverse engineering, or abusive
-            use is strictly forbidden.
-          </p>
-        </div>
+      <p className="mb-4">
+        Welcome to the website of <strong>Yoshimyra</strong>, operated by{" "}
+        <strong>Yoshimyra SARL</strong>, a registered business based in Rabat,
+        Morocco. By using our services, you agree to the terms described below.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            3. Data Privacy
-          </h2>
-          <p className="text-gray-700">
-            Yoshimyra respects your privacy. We only collect the minimum data
-            required and use it strictly to improve our services. We do not sell
-            or share your personal data without explicit consent.
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        1. Description of Services
+      </h2>
+      <p className="mb-4">
+        Yoshimyra builds mobile and web applications, offers innovative SaaS
+        products, and provides technical services related to our digital
+        platforms.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            4. Intellectual Property
-          </h2>
-          <p className="text-gray-700">
-            All materials on our products and sites (logos, UI, content, code,
-            illustrations) are the exclusive property of Yoshimyra unless
-            otherwise stated. Any reproduction or redistribution without
-            permission is prohibited.
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">2. Service Use</h2>
+      <p className="mb-4">
+        You agree to use our services lawfully, respecting our copyrights and
+        third-party rights. Any form of abuse, hacking, or reverse engineering
+        is strictly prohibited.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            5. Updates & Maintenance
-          </h2>
-          <p className="text-gray-700">
-            We reserve the right to update our products at any time to improve
-            security, performance, or user experience. Updates may include new
-            features, bug fixes, or UI changes.
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">3. Payment & Billing</h2>
+      <p className="mb-4">
+        Payments are handled via Paddle, our official Merchant of Record. All
+        prices are shown in EUR or USD depending on your location.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            6. Refund Policy
-          </h2>
-          <p className="text-gray-700">
-            Refund requests may be submitted within 14 days of purchase. Each
-            request will be reviewed case by case based on how the service has
-            been used.
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">4. Refunds</h2>
+      <p className="mb-4">
+        Please refer to our{" "}
+        <a href="/en/refund-policy" className="underline">
+          Refund Policy
+        </a>{" "}
+        for details.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            7. Contact
-          </h2>
-          <p className="text-gray-700">
-            For questions, concerns, or specific requests regarding these terms,
-            contact us at:{" "}
-            <a
-              href="mailto:support@yoshimyra.com"
-              className="text-blue-600 underline"
-            >
-              hello@yoshimyra.com
-            </a>
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        5. Intellectual Property
+      </h2>
+      <p className="mb-4">
+        All content, designs, and software are protected by copyright.
+        Reproduction or resale without permission is not allowed.
+      </p>
 
-        <p className="text-sm text-gray-500 text-center mt-12">
-          Last updated: {new Date().toLocaleDateString("en-GB")}
-        </p>
-      </section>
+      <h2 className="text-xl font-semibold mt-6 mb-2">6. Updates to Terms</h2>
+      <p className="mb-4">
+        Yoshimyra reserves the right to update these terms at any time. Users
+        will be notified via email or through our website.
+      </p>
+
+      <p className="mt-8 text-sm">
+        For any inquiries, please contact us at{" "}
+        <a href="mailto:hello@yoshimyra.com" className="underline">
+          hello@yoshimyra.com
+        </a>
+        .
+      </p>
     </main>
   );
 }

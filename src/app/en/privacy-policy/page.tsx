@@ -5,89 +5,88 @@ export default function PricingPage() {
     <main className="min-h-screen bg-white text-gray-900 p-6">
       <section className="text-center mb-12">
         <h1 className="text-4xl font-bold text-[#1B4F72] mb-2">
-          Nos Offres de Service
+          Our Service Packages
         </h1>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Découvrez nos forfaits clairs et transparents pour la création
-          d&apos;applications web ou mobiles, ou pour bénéficier de notre
-          support technique.
+          Choose the plan that fits your needs — mobile or web development, or
+          continuous technical support.
         </p>
       </section>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {/* Pack Découverte */}
+        {/* Starter Pack */}
         <div className="border rounded-xl p-6 shadow hover:shadow-lg transition">
           <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
-            Pack Découverte
+            Starter Pack
           </h2>
           <p className="text-gray-600 mb-4">
-            Paiement unique — Livraison rapide d’un site de présentation.
+            One-time payment — Get a presentation website delivered quickly.
           </p>
           <ul className="text-sm text-gray-700 space-y-2 mb-6">
-            <li>✅ Site vitrine ou landing page personnalisé</li>
-            <li>✅ Design responsive (ordinateur + mobile)</li>
-            <li>✅ Hébergement + nom de domaine offert 1 an</li>
-            <li>✅ Livraison en 5 à 10 jours ouvrables</li>
+            <li>✅ Custom landing page or showcase website</li>
+            <li>✅ Responsive design (mobile + desktop)</li>
+            <li>✅ Hosting + domain name included for 1 year</li>
+            <li>✅ Delivery within 5–10 business days</li>
           </ul>
           <p className="text-2xl font-bold text-[#00C896] mb-4">
-            À partir de 600€ (paiement unique)
+            From €600 (one-time)
           </p>
           <LocalizedLink
             href="/contact"
             className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
           >
-            Demander un devis
+            Request a quote
           </LocalizedLink>
         </div>
 
-        {/* Pack Pro */}
+        {/* Pro Pack */}
         <div className="border rounded-xl p-6 shadow-lg bg-[#E6FCF4] ring-2 ring-[#00C896]">
           <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
-            Pack Pro
+            Pro Pack
           </h2>
           <p className="text-gray-600 mb-4">
-            Paiement unique — Application complète avec base de données.
+            One-time payment — Full application with database.
           </p>
           <ul className="text-sm text-gray-700 space-y-2 mb-6">
-            <li>✅ Application web ou mobile sur mesure</li>
-            <li>✅ Authentification sécurisée + base de données</li>
-            <li>✅ Interface d’administration (dashboard)</li>
-            <li>✅ Livraison sous 3 à 5 semaines</li>
-            <li>✅ Support 30 jours après livraison</li>
+            <li>✅ Custom web or mobile app</li>
+            <li>✅ Secure authentication + database</li>
+            <li>✅ Admin dashboard included</li>
+            <li>✅ Delivered in 3 to 5 weeks</li>
+            <li>✅ 30 days of support post-delivery</li>
           </ul>
           <p className="text-2xl font-bold text-[#00C896] mb-4">
-            À partir de 2 500€ (paiement unique)
+            From €2,500 (one-time)
           </p>
           <LocalizedLink
             href="/contact"
             className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
           >
-            Commencer mon projet
+            Start my project
           </LocalizedLink>
         </div>
 
-        {/* Pack Support */}
+        {/* Support Pack */}
         <div className="border rounded-xl p-6 shadow hover:shadow-lg transition">
           <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
-            Support & Conseils
+            Support & Consulting
           </h2>
           <p className="text-gray-600 mb-4">
-            Abonnement ou à l’heure — Assistance continue pour vos projets.
+            Subscription or hourly — Continuous technical assistance.
           </p>
           <ul className="text-sm text-gray-700 space-y-2 mb-6">
-            <li>✅ Audit de code (performance, sécurité, UX)</li>
-            <li>✅ Maintenance évolutive ou corrective</li>
-            <li>✅ Assistance personnalisée sur Slack ou visio</li>
-            <li>✅ Livrables : rapports, correctifs, recommandations</li>
+            <li>✅ Code and performance audits</li>
+            <li>✅ Evolutionary or corrective maintenance</li>
+            <li>✅ Personalized assistance via Slack or video</li>
+            <li>✅ Deliverables: reports, fixes, tech insights</li>
           </ul>
           <p className="text-2xl font-bold text-[#00C896] mb-4">
-            80€/h ou dès 150€/mois (abonnement)
+            €80/h or from €150/month (subscription)
           </p>
           <LocalizedLink
             href="/contact"
             className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
           >
-            Réserver une session
+            Book a session
           </LocalizedLink>
         </div>
       </div>

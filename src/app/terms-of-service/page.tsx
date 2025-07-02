@@ -1,110 +1,83 @@
-export default function TermsOfService() {
+import LocalizedLink from "@/components/LocalizedLink";
+
+export default function TermsFr() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 p-6">
-      <section className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-[#1B4F72] mb-2">
-          Conditions Générales d’Utilisation
-        </h1>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          En utilisant nos services, vous acceptez les conditions ci-dessous.
-          Nous vous encourageons à les lire attentivement.
-        </p>
-      </section>
+    <main className="max-w-3xl mx-auto py-16 px-4 text-gray-800">
+      <h1 className="text-3xl font-bold mb-6">
+        Conditions Générales d’Utilisation
+      </h1>
 
-      <section className="max-w-4xl mx-auto space-y-8">
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            1. Présentation de Yoshimyra
-          </h2>
-          <p className="text-gray-700">
-            Yoshimyra est une entreprise spécialisée dans la conception et le
-            développement de solutions digitales : applications mobiles,
-            plateformes web, SaaS et outils personnalisés. Nos produits sont
-            conçus pour offrir de la valeur, de l’efficacité et une expérience
-            utilisateur optimale.
-          </p>
-        </div>
+      <p className="mb-4">Dernière mise à jour : 2 juillet 2025</p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            2. Utilisation autorisée
-          </h2>
-          <p className="text-gray-700">
-            L’utilisation de nos produits est strictement réservée à un usage
-            légal, personnel ou professionnel. Toute tentative de piratage,
-            d’ingénierie inverse, ou d’exploitation abusive est interdite.
-          </p>
-        </div>
+      <p className="mb-4">
+        Bienvenue sur le site web de <strong>Yoshimyra</strong>, une entreprise
+        immatriculée sous le nom <strong>Yoshimyra SARL</strong>, dont le siège
+        social est basé à Rabat, Maroc. En accédant ou en utilisant nos
+        services, vous acceptez ces conditions.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            3. Confidentialité des données
-          </h2>
-          <p className="text-gray-700">
-            Yoshimyra s&#39;engage à respecter la vie privée de ses
-            utilisateurs. Les données collectées sont limitées au strict
-            nécessaire et utilisées uniquement à des fins d&#39;amélioration
-            continue. Nous ne revendons ni ne partageons vos données à des tiers
-            sans votre consentement explicite.
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        1. Présentation des services
+      </h2>
+      <p className="mb-4">
+        Yoshimyra développe des applications web et mobiles, propose des outils
+        SaaS innovants, et offre des services techniques liés à ses produits
+        numériques.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            4. Propriété intellectuelle
-          </h2>
-          <p className="text-gray-700">
-            Tous les éléments présents sur nos produits et sites (logos,
-            interfaces, contenus, code, illustrations) sont la propriété
-            exclusive de Yoshimyra, sauf mention contraire. Toute reproduction
-            ou redistribution sans autorisation est interdite.
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        2. Utilisation de nos services
+      </h2>
+      <p className="mb-4">
+        Vous acceptez d’utiliser nos produits conformément à la loi, dans le
+        respect de nos droits d’auteur et ceux de tiers. Toute tentative de
+        piratage, rétro-ingénierie ou utilisation abusive est strictement
+        interdite.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            5. Mises à jour & maintenance
-          </h2>
-          <p className="text-gray-700">
-            Nous nous réservons le droit de mettre à jour nos produits à tout
-            moment pour améliorer la sécurité, les performances ou l’expérience
-            utilisateur. Ces mises à jour peuvent inclure de nouvelles
-            fonctionnalités, des corrections de bugs ou des changements
-            d’interface.
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        3. Paiement & facturation
+      </h2>
+      <p className="mb-4">
+        Les paiements sont gérés par notre partenaire Paddle, qui agit en tant
+        que marchand officiel (Merchant of Record). Tous les montants sont
+        affichés en EUR ou USD selon votre région.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            6. Politique de remboursement
-          </h2>
-          <p className="text-gray-700">
-            Les demandes de remboursement peuvent être adressées à notre support
-            dans un délai de 14 jours suivant l’achat. Chaque demande sera
-            évaluée au cas par cas, selon les modalités d’usage du service.
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        4. Politique de remboursement
+      </h2>
+      <p className="mb-4">
+        Consultez notre{" "}
+        <LocalizedLink href="/refund-policy" className="underline">
+          Politique de remboursement
+        </LocalizedLink>{" "}
+        pour plus de détails.
+      </p>
 
-        <div>
-          <h2 className="text-2xl font-semibold text-[#1B4F72] mb-2">
-            7. Contact
-          </h2>
-          <p className="text-gray-700">
-            Pour toute question, remarque ou demande spécifique concernant ces
-            conditions, veuillez nous contacter à :{" "}
-            <a
-              href="mailto:support@yoshimyra.com"
-              className="text-blue-600 underline"
-            >
-              hello@yoshimyra.com
-            </a>
-          </p>
-        </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        5. Propriété intellectuelle
+      </h2>
+      <p className="mb-4">
+        Tous les contenus, logos, produits et interfaces sont protégés. Aucune
+        reproduction ou revente n’est autorisée sans notre accord.
+      </p>
 
-        <p className="text-sm text-gray-500 text-center mt-12">
-          Dernière mise à jour : {new Date().toLocaleDateString("fr-FR")}
-        </p>
-      </section>
+      <h2 className="text-xl font-semibold mt-6 mb-2">
+        6. Modification des conditions
+      </h2>
+      <p className="mb-4">
+        Yoshimyra se réserve le droit de mettre à jour ces conditions à tout
+        moment. Les utilisateurs seront notifiés par e-mail ou via notre site.
+      </p>
+
+      <p className="mt-8 text-sm">
+        Pour toute question, veuillez nous contacter à{" "}
+        <a href="mailto:hello@yoshimyra.com" className="underline">
+          hello@yoshimyra.com
+        </a>
+        .
+      </p>
     </main>
   );
 }

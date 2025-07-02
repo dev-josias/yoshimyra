@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ContactForm";
+
 export default function ContactPageEn() {
   return (
     <main className="min-h-screen bg-white text-gray-900 p-6">
@@ -9,47 +11,30 @@ export default function ContactPageEn() {
         </p>
       </section>
 
-      <form className="max-w-2xl mx-auto grid gap-6">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Full name
-          </label>
-          <input
-            type="text"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00C896]"
-            placeholder="Your name"
-          />
-        </div>
+      <section className="text-center mb-6">
+        <p className="text-md text-gray-700">
+          📧 Email :{" "}
+          <a
+            href="mailto:hello@yoshimyra.com"
+            className="text-[#00C896] underline"
+          >
+            hello@yoshimyra.com
+          </a>
+        </p>
+        <p className="text-md text-gray-700">
+          📱 WhatsApp :{" "}
+          <a
+            href="https://wa.me/212776987747"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#00C896] underline"
+          >
+            +212 776987747
+          </a>
+        </p>
+      </section>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Email address
-          </label>
-          <input
-            type="email"
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00C896]"
-            placeholder="you@example.com"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Message
-          </label>
-          <textarea
-            rows={5}
-            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00C896]"
-            placeholder="Describe your project or write your message..."
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          className="bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition"
-        >
-          Send Message
-        </button>
-      </form>
+      <ContactForm />
     </main>
   );
 }

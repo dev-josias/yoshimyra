@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import LanguageSwitch from "@/components/LanguageSwitch";
-import LocalizedLink from "@/components/LocalizedLink";
-import Image from "next/image";
+import LocalizedFooter from "@/components/LocaizedFooter";
+import LocalizedHeader from "@/components/LocalizedHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yoshimyra – Digital Solutions & SaaS Development",
+  title:
+    "Yoshimyra – Digital Solutions & SaaS Development - Mobile Development",
   description:
     "Yoshimyra est une société de développement logiciel spécialisée dans la création d'applications mobiles, de plateformes web et de solutions SaaS innovantes.",
   keywords: [
@@ -69,59 +69,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <main className="min-h-screen bg-white text-gray-900">
-          <header className="p-6 border-b flex justify-between items-center shadow-sm">
-            <LocalizedLink
-              href="/"
-              className="flex items-center relative space-x-2"
-            >
-              <Image
-                src={"/logo.png"}
-                width={50}
-                height={50}
-                alt="Logo Yoshimyra"
-              />
-              <h1 className="text-2xl font-bold">Yoshimyra</h1>
-            </LocalizedLink>
-
-            <nav className="space-x-4">
-              <LocalizedLink href="/pricing" className="hover:underline">
-                Pricing
-              </LocalizedLink>
-              <LocalizedLink href="/products" className="hover:underline">
-                Products
-              </LocalizedLink>
-              <LocalizedLink
-                href="/terms-of-service"
-                className="hover:underline"
-              >
-                Terms
-              </LocalizedLink>
-              <LocalizedLink href="/contact" className="hover:underline">
-                Contact
-              </LocalizedLink>
-              <LanguageSwitch />
-            </nav>
-          </header>
+          <LocalizedHeader />
           {children}
-
-          <footer className="py-6 border-t text-center text-sm text-gray-500 bg-white space-y-2">
-            <div>
-              © {new Date().getFullYear()} Yoshimyra. All rights reserved.
-            </div>
-            <div className="flex justify-center items-center space-x-4">
-              <span className="font-medium">
-                D-U-N-S Number: <strong>854869663</strong>
-              </span>
-              <a
-                href="https://www.dnb.com/business-directory/company-profiles.yoshimyra.be5f769bd170fc72eae7ecf9b853c61e.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-black transition"
-              >
-                View on D&B
-              </a>
-            </div>
-          </footer>
+          <LocalizedFooter />
         </main>
       </body>
     </html>
