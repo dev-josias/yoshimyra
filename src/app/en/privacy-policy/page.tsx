@@ -1,95 +1,59 @@
-import LocalizedLink from "@/components/LocalizedLink";
+import React from "react";
 
-export default function PricingPage() {
+export default function PrivacyPolicyEn() {
   return (
-    <main className="min-h-screen bg-white text-gray-900 p-6">
-      <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-[#1B4F72] mb-2">
-          Our Service Packages
-        </h1>
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Choose the plan that fits your needs — mobile or web development, or
-          continuous technical support.
-        </p>
-      </section>
+    <main className="max-w-3xl mx-auto py-16 px-4 text-gray-800">
+      <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {/* Starter Pack */}
-        <div className="border rounded-xl p-6 shadow hover:shadow-lg transition">
-          <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
-            Starter Pack
-          </h2>
-          <p className="text-gray-600 mb-4">
-            One-time payment — Get a presentation website delivered quickly.
-          </p>
-          <ul className="text-sm text-gray-700 space-y-2 mb-6">
-            <li>✅ Custom landing page or showcase website</li>
-            <li>✅ Responsive design (mobile + desktop)</li>
-            <li>✅ Hosting + domain name included for 1 year</li>
-            <li>✅ Delivery within 5–10 business days</li>
-          </ul>
-          <p className="text-2xl font-bold text-[#00C896] mb-4">
-            From €600 (one-time)
-          </p>
-          <LocalizedLink
-            href="/contact"
-            className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
-          >
-            Request a quote
-          </LocalizedLink>
-        </div>
+      <p className="mb-4">Last updated: July 2, 2025</p>
 
-        {/* Pro Pack */}
-        <div className="border rounded-xl p-6 shadow-lg bg-[#E6FCF4] ring-2 ring-[#00C896]">
-          <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
-            Pro Pack
-          </h2>
-          <p className="text-gray-600 mb-4">
-            One-time payment — Full application with database.
-          </p>
-          <ul className="text-sm text-gray-700 space-y-2 mb-6">
-            <li>✅ Custom web or mobile app</li>
-            <li>✅ Secure authentication + database</li>
-            <li>✅ Admin dashboard included</li>
-            <li>✅ Delivered in 3 to 5 weeks</li>
-            <li>✅ 30 days of support post-delivery</li>
-          </ul>
-          <p className="text-2xl font-bold text-[#00C896] mb-4">
-            From €2,500 (one-time)
-          </p>
-          <LocalizedLink
-            href="/contact"
-            className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
-          >
-            Start my project
-          </LocalizedLink>
-        </div>
+      <p className="mb-4">
+        This policy explains how <strong>Yoshimyra SARL</strong> collects, uses,
+        and protects your personal information. We are committed to complying
+        with the General Data Protection Regulation (GDPR).
+      </p>
 
-        {/* Support Pack */}
-        <div className="border rounded-xl p-6 shadow hover:shadow-lg transition">
-          <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
-            Support & Consulting
-          </h2>
-          <p className="text-gray-600 mb-4">
-            Subscription or hourly — Continuous technical assistance.
-          </p>
-          <ul className="text-sm text-gray-700 space-y-2 mb-6">
-            <li>✅ Code and performance audits</li>
-            <li>✅ Evolutionary or corrective maintenance</li>
-            <li>✅ Personalized assistance via Slack or video</li>
-            <li>✅ Deliverables: reports, fixes, tech insights</li>
-          </ul>
-          <p className="text-2xl font-bold text-[#00C896] mb-4">
-            €80/h or from €150/month (subscription)
-          </p>
-          <LocalizedLink
-            href="/contact"
-            className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
-          >
-            Book a session
-          </LocalizedLink>
-        </div>
-      </div>
+      <h2 className="text-xl font-semibold mt-6 mb-2">1. Data we collect</h2>
+      <ul className="list-disc pl-5 mb-4">
+        <li>Name, email, and billing details</li>
+        <li>IP address and browsing data</li>
+        <li>Technical usage data related to our services</li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mt-6 mb-2">2. Use of your data</h2>
+      <p className="mb-4">We use your data to:</p>
+      <ul className="list-disc pl-5 mb-4">
+        <li>Deliver and improve our services</li>
+        <li>Process payments via Paddle</li>
+        <li>Provide support and respond to inquiries</li>
+      </ul>
+
+      <h2 className="text-xl font-semibold mt-6 mb-2">3. Data sharing</h2>
+      <p className="mb-4">
+        Your data may be shared with:
+        <br />- Our payment processor - Trusted partners (e.g., hosting,
+        analytics)
+      </p>
+
+      <h2 className="text-xl font-semibold mt-6 mb-2">4. Your rights</h2>
+      <p className="mb-4">
+        You can access, update, or delete your data. To do so, contact us at{" "}
+        <a href="mailto:contact@yoshimyra.com" className="underline">
+          contact@yoshimyra.com
+        </a>
+        .
+      </p>
+
+      <h2 className="text-xl font-semibold mt-6 mb-2">5. Security</h2>
+      <p className="mb-4">
+        We implement organizational and technical measures to keep your data
+        secure.
+      </p>
+
+      <h2 className="text-xl font-semibold mt-6 mb-2">6. Cookies</h2>
+      <p className="mb-4">
+        We use cookies to improve navigation and gather analytics.
+      </p>
     </main>
   );
 }

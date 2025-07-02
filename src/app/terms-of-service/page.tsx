@@ -41,7 +41,8 @@ export default function TermsFr() {
       <p className="mb-4">
         Les paiements sont gérés par notre partenaire Paddle, qui agit en tant
         que marchand officiel (Merchant of Record). Tous les montants sont
-        affichés en EUR ou USD selon votre région.
+        affichés en EUR ou USD selon votre région. (Paddle est actuellement en
+        cours d’approbation sur notre site.)
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">

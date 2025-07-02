@@ -29,8 +29,9 @@ export default function TermsEn() {
 
       <h2 className="text-xl font-semibold mt-6 mb-2">3. Payment & Billing</h2>
       <p className="mb-4">
-        Payments are handled via Paddle, our official Merchant of Record. All
-        prices are shown in EUR or USD depending on your location.
+        Payments will be processed via Paddle, our official Merchant of Record
+        (pending final approval). All prices are clearly listed in EUR or USD
+        depending on the customer’s location.
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">4. Refunds</h2>

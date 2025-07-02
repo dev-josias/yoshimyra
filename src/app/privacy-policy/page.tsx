@@ -34,8 +34,9 @@ export default function PrivacyPolicyFr() {
       </h2>
       <p className="mb-4">
         Vos données peuvent être partagées avec :
-        <br />- Paddle, notre prestataire de paiement - Nos partenaires
-        techniques de confiance (hébergement, analytics)
+        <br />
+        Notre prestataire de paiement - Nos partenaires techniques de confiance
+        (hébergement, analytics)
       </p>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">4. Vos droits</h2>
