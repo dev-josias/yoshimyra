@@ -30,8 +30,8 @@ export default function RefundPolicyFr() {
       <p className="mb-4">
         Pour demander un remboursement, veuillez nous contacter à l’adresse
         suivante :{" "}
-        <a href="mailto:support@yoshimyra.com" className="underline">
-          support@yoshimyra.com
+        <a href="mailto:hello@yoshimyra.com" className="underline">
+          hello@yoshimyra.com
         </a>
         <br />
         Veuillez inclure votre numéro de commande et une description du

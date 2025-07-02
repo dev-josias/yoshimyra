@@ -23,9 +23,9 @@ export default function RefundPolicyEn() {
       <h2 className="text-xl font-semibold mt-6 mb-2">2. How to request</h2>
       <p className="mb-4">
         Please email us at{" "}
-        <a href="mailto:support@yoshimyra.com" className="underline">
-          support@yoshimyra.com
-        </a>
+        <a href="mailto:hello@yoshimyra.com" className="underline">
+          hello@yoshimyra.com
+        </a>{" "}
         with your order number and a description of the issue.
       </p>
 

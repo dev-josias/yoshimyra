@@ -1,6 +1,6 @@
 import LocalizedLink from "@/components/LocalizedLink";
 
-export default function PricingPageEn() {
+export default function PricingPage() {
   return (
     <main className="min-h-screen bg-white text-gray-900 p-6">
       <section className="text-center mb-12">
@@ -8,25 +8,29 @@ export default function PricingPageEn() {
           Our Service Packages
         </h1>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Choose the right plan for your needs — whether it&apos;s mobile/web
-          development or technical support.
+          Choose the plan that fits your needs — mobile or web development, or
+          continuous technical support.
         </p>
       </section>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {/* Starter Pack */}
         <div className="border rounded-xl p-6 shadow hover:shadow-lg transition">
           <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
             Starter Pack
           </h2>
           <p className="text-gray-600 mb-4">
-            Perfect for individuals and small projects.
+            One-time payment — Get a presentation website delivered quickly.
           </p>
           <ul className="text-sm text-gray-700 space-y-2 mb-6">
-            <li>✅ Landing page or showcase website</li>
-            <li>✅ Responsive design</li>
-            <li>✅ Quick delivery</li>
+            <li>✅ Custom landing page or showcase website</li>
+            <li>✅ Responsive design (mobile + desktop)</li>
+            <li>✅ Hosting + domain name included for 1 year</li>
+            <li>✅ Delivery within 5–10 business days</li>
           </ul>
-          <p className="text-2xl font-bold text-[#00C896] mb-4">From €600</p>
+          <p className="text-2xl font-bold text-[#00C896] mb-4">
+            From €600 (one-time)
+          </p>
           <LocalizedLink
             href="/contact"
             className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
@@ -35,41 +39,48 @@ export default function PricingPageEn() {
           </LocalizedLink>
         </div>
 
+        {/* Pro Pack */}
         <div className="border rounded-xl p-6 shadow-lg bg-[#E6FCF4] ring-2 ring-[#00C896]">
           <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
             Pro Pack
           </h2>
           <p className="text-gray-600 mb-4">
-            All-in-one for startups, MVPs, or established businesses.
+            One-time payment — Full application with database.
           </p>
           <ul className="text-sm text-gray-700 space-y-2 mb-6">
-            <li>✅ Web or mobile app</li>
-            <li>✅ Auth + database integration</li>
-            <li>✅ Admin dashboard</li>
+            <li>✅ Custom web or mobile app</li>
+            <li>✅ Secure authentication + database</li>
+            <li>✅ Admin dashboard included</li>
+            <li>✅ Delivered in 3 to 5 weeks</li>
+            <li>✅ 30 days of support post-delivery</li>
           </ul>
-          <p className="text-2xl font-bold text-[#00C896] mb-4">From €2,500</p>
+          <p className="text-2xl font-bold text-[#00C896] mb-4">
+            From €2,500 (one-time)
+          </p>
           <LocalizedLink
             href="/contact"
             className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
           >
-            Start your project
+            Start my project
           </LocalizedLink>
         </div>
 
+        {/* Support Pack */}
         <div className="border rounded-xl p-6 shadow hover:shadow-lg transition">
           <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
-            Consulting & Support
+            Support & Consulting
           </h2>
           <p className="text-gray-600 mb-4">
-            Code review, performance audit, or ongoing updates.
+            Subscription or hourly — Continuous technical assistance.
           </p>
           <ul className="text-sm text-gray-700 space-y-2 mb-6">
-            <li>✅ Code or performance audit</li>
-            <li>✅ Monthly maintenance</li>
-            <li>✅ Personalized technical support</li>
+            <li>✅ Code and performance audits</li>
+            <li>✅ Evolutionary or corrective maintenance</li>
+            <li>✅ Personalized assistance via Slack or video</li>
+            <li>✅ Deliverables: reports, fixes, tech insights</li>
           </ul>
           <p className="text-2xl font-bold text-[#00C896] mb-4">
-            €80/h or from €150/mo
+            €80/h or from €150/month (subscription)
           </p>
           <LocalizedLink
             href="/contact"
