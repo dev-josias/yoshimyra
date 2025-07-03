@@ -12,13 +12,13 @@ export default function LocalizedHeader() {
   const navItems = {
     en: [
       { href: "/pricing", label: "Pricing" },
-      { href: "/products", label: "Products" },
+      { href: "/portfolio", label: "Portfolio" },
       { href: "/contact", label: "Contact" },
       { href: "/terms-of-service", label: "Terms & Conditions" },
     ],
     fr: [
       { href: "/pricing", label: "Tarifs" },
-      { href: "/products", label: "Produits" },
+      { href: "/portfolio", label: "Portfolio" },
       { href: "/contact", label: "Contact" },
       { href: "/terms-of-service", label: "Conditions Générales" },
     ],
