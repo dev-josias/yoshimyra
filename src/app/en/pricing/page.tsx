@@ -8,8 +8,8 @@ export default function PricingPage() {
           Our Service Packages
         </h1>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          Choose the plan that fits your needs — mobile or web development, or
-          continuous technical support.
+          Choose the package that fits your needs — from presentation websites
+          to full applications.
         </p>
       </section>
 
@@ -45,14 +45,14 @@ export default function PricingPage() {
             Pro Pack
           </h2>
           <p className="text-gray-600 mb-4">
-            One-time payment — Full application with database.
+            One-time payment — Full application with integrated features.
           </p>
           <ul className="text-sm text-gray-700 space-y-2 mb-6">
             <li>✅ Custom web or mobile app</li>
             <li>✅ Secure authentication + database</li>
             <li>✅ Admin dashboard included</li>
             <li>✅ Delivered in 3 to 5 weeks</li>
-            <li>✅ 30 days of support post-delivery</li>
+            <li>✅ Includes technical documentation</li>
           </ul>
           <p className="text-2xl font-bold text-[#00C896] mb-4">
             From €2,500 (one-time)
@@ -65,28 +65,28 @@ export default function PricingPage() {
           </LocalizedLink>
         </div>
 
-        {/* Support Pack */}
+        {/* Technical Maintenance Pack */}
         <div className="border rounded-xl p-6 shadow hover:shadow-lg transition">
           <h2 className="text-xl font-semibold mb-4 text-[#1B4F72]">
-            Support & Consulting
+            Maintenance & Upgrades
           </h2>
           <p className="text-gray-600 mb-4">
-            Subscription or hourly — Continuous technical assistance.
+            Ongoing improvements and code quality reports.
           </p>
           <ul className="text-sm text-gray-700 space-y-2 mb-6">
             <li>✅ Code and performance audits</li>
-            <li>✅ Evolutionary or corrective maintenance</li>
-            <li>✅ Personalized assistance via Slack or video</li>
-            <li>✅ Deliverables: reports, fixes, tech insights</li>
+            <li>✅ Security and stability updates</li>
+            <li>✅ Monthly upgrade packages with changelogs</li>
+            <li>✅ Includes deliverables: reports and improvement roadmap</li>
           </ul>
           <p className="text-2xl font-bold text-[#00C896] mb-4">
-            €80/h or from €150/month (subscription)
+            From €150/month (subscription)
           </p>
           <LocalizedLink
             href="/contact"
             className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
           >
-            Book a session
+            Subscribe
           </LocalizedLink>
         </div>
       </div>
