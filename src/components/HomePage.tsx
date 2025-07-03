@@ -42,7 +42,7 @@ export default function HomePage() {
           >
             {isFr
               ? "Yoshimyra conçoit des applications mobiles, plateformes web et outils SaaS pour transformer vos idées en produits concrets, intuitifs et durables."
-              : "Yoshimyra designs mobile apps, web platforms, and SaaS tools to turn your ideas into intuitive, durable, and impactful products."}
+              : "Yoshimyra designs mobile apps, web platforms, and SaaS tools to turn your ideas into intuitive, durable, and impactful portfolio."}
           </motion.p>
 
           <div className="flex flex-col items-center gap-2 mb-8">
@@ -60,7 +60,7 @@ export default function HomePage() {
           </div>
 
           <LocalizedLink
-            href="/products"
+            href="/portfolio"
             className="inline-block px-8 py-3 rounded-full text-white bg-gradient-to-r from-[#00C896] to-[#5ED6E5] shadow hover:opacity-90 transition"
           >
             {isFr ? "Explorer nos réalisations" : "Explore our works"}
@@ -80,7 +80,7 @@ export default function HomePage() {
         </p>
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           <LocalizedLink
-            href="/products#web"
+            href="/portfolio"
             className="p-6 border rounded-lg shadow hover:shadow-md transition"
           >
             <h3 className="text-xl font-semibold text-[#1B4F72] mb-2">
@@ -94,7 +94,7 @@ export default function HomePage() {
           </LocalizedLink>
 
           <LocalizedLink
-            href="/products#mobile"
+            href="/portfolio"
             className="p-6 border rounded-lg shadow hover:shadow-md transition"
           >
             <h3 className="text-xl font-semibold text-[#1B4F72] mb-2">
@@ -108,7 +108,7 @@ export default function HomePage() {
           </LocalizedLink>
 
           <LocalizedLink
-            href="/products#design"
+            href="/portfolio"
             className="p-6 border rounded-lg shadow hover:shadow-md transition"
           >
             <h3 className="text-xl font-semibold text-[#1B4F72] mb-2">
@@ -136,7 +136,7 @@ export default function HomePage() {
               : "Music player with automatic stem separation: vocals, drums, bass, and more."}
           </p>
           <LocalizedLink
-            href="/products"
+            href="/portfolio"
             className="inline-block px-6 py-2 mt-2 rounded-full text-white bg-[#00C896] hover:opacity-90 transition"
           >
             {isFr ? "En savoir plus" : "Learn more"}
