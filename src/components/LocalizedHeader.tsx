@@ -10,17 +10,23 @@ import clsx from "clsx";
 export default function LocalizedHeader() {
   const pathname = usePathname();
   const locale = pathname.startsWith("/en") ? "en" : "fr";
+  const isHome = pathname === "/" || pathname === "/en";
   const [scrolled, setScrolled] = useState(false);
   const [logo, setLogo] = useState("/logo-transparent.png");
 
   useEffect(() => {
+    if (!isHome) {
+      setScrolled(true);
+      return;
+    }
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHome]);
 
   const navItems = {
     en: [

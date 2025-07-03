@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LocalizedFooter from "@/components/LocaizedFooter";
 import LocalizedHeader from "@/components/LocalizedHeader";
+import PaddingWrapper from "@/components/PaddingWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -70,7 +71,7 @@ export default function RootLayout({
       >
         <main className="min-h-screen bg-white text-gray-900">
           <LocalizedHeader />
-          {children}
+          <PaddingWrapper> {children}</PaddingWrapper>
           <LocalizedFooter />
         </main>
       </body>
