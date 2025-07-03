@@ -2,30 +2,65 @@
 
 import { usePathname } from "next/navigation";
 import LocalizedLink from "@/components/LocalizedLink";
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   const pathname = usePathname();
   const isFr = !pathname?.startsWith("/en");
 
+  const slogan = isFr
+    ? "Ce que vous achetez, c’est ce que vous recevez"
+    : "(WYBIWG) What You Buy Is What You Get";
+
   return (
     <main>
-      <section className="py-24 px-6 text-center bg-gradient-to-b from-[#E6FCF4] to-white">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-[#1B4F72]">
-          {isFr
-            ? "Des solutions digitales\nintelligentes et inspirantes"
-            : "Smart and Inspiring\nDigital Solutions"}
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-gray-700">
-          {isFr
-            ? "Yoshimyra conçoit des applications mobiles, plateformes web et outils SaaS pour transformer vos idées en produits concrets, intuitifs et durables."
-            : "Yoshimyra designs mobile apps, web platforms, and SaaS tools to turn your ideas into intuitive, durable, and impactful products."}
-        </p>
-        <LocalizedLink
-          href="/products"
-          className="inline-block px-8 py-3 rounded-full text-white bg-gradient-to-r from-[#00C896] to-[#5ED6E5] shadow hover:opacity-90 transition"
-        >
-          {isFr ? "Explorer nos réalisations" : "Explore our works"}
-        </LocalizedLink>
+      <section
+        className="relative py-24 px-6 text-center bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/hero-bg.jpg')", // Image à placer dans /public
+        }}
+      >
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+
+        <div className="relative z-10 max-w-3xl mx-auto">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-[#1B4F72]"
+          >
+            {isFr
+              ? "Des solutions digitales intelligentes et inspirantes"
+              : "Smart and Inspiring Digital Solutions"}
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-lg md:text-xl text-gray-700 mb-4"
+          >
+            {isFr
+              ? "Yoshimyra conçoit des applications mobiles, plateformes web et outils SaaS pour transformer vos idées en produits concrets, intuitifs et durables."
+              : "Yoshimyra designs mobile apps, web platforms, and SaaS tools to turn your ideas into intuitive, durable, and impactful products."}
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="text-sm uppercase tracking-wide font-semibold text-[#00C896] mb-8"
+          >
+            {slogan}
+          </motion.p>
+
+          <LocalizedLink
+            href="/products"
+            className="inline-block px-8 py-3 rounded-full text-white bg-gradient-to-r from-[#00C896] to-[#5ED6E5] shadow hover:opacity-90 transition"
+          >
+            {isFr ? "Explorer nos réalisations" : "Explore our works"}
+          </LocalizedLink>
+        </div>
       </section>
 
       {/* Services Section */}
