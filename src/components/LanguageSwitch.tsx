@@ -1,8 +1,9 @@
 "use client";
+import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const LanguageSwitch = () => {
+const LanguageSwitch = ({ scrolled }: { scrolled?: boolean }) => {
   const pathname = usePathname();
 
   return pathname.includes("en") ? (
@@ -12,13 +13,22 @@ const LanguageSwitch = () => {
           ? pathname.replace("en", "")
           : pathname.replace("/en", "")
       }
-      className="hover:underline text-sm"
+      className={clsx(
+        "underline text-sm",
+        scrolled ? "text-black" : "text-white"
+      )}
     >
-      FR
+      EN
     </Link>
   ) : (
-    <Link href={`/en${pathname}`} className="hover:underline text-sm">
-      EN
+    <Link
+      href={`/en${pathname}`}
+      className={clsx(
+        "underline text-sm",
+        scrolled ? "text-black" : "text-white"
+      )}
+    >
+      FR
     </Link>
   );
 };

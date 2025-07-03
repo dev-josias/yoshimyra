@@ -15,19 +15,19 @@ export default function HomePage() {
   return (
     <main>
       <section
-        className="relative py-24 px-6 text-center bg-cover bg-center bg-no-repeat"
+        className="relative py-24 px-6 text-center bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center"
         style={{
-          backgroundImage: "url('/hero-bg.jpg')", // Image à placer dans /public
+          backgroundImage: "url('/hero.png')",
         }}
       >
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
 
         <div className="relative z-10 max-w-3xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-[#1B4F72]"
+            className="text-4xl md:text-5xl font-bold mb-4 leading-tight text-white"
           >
             {isFr
               ? "Des solutions digitales intelligentes et inspirantes"
@@ -38,21 +38,26 @@ export default function HomePage() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-lg md:text-xl text-gray-700 mb-4"
+            className="text-lg md:text-xl text-white mb-4"
           >
             {isFr
               ? "Yoshimyra conçoit des applications mobiles, plateformes web et outils SaaS pour transformer vos idées en produits concrets, intuitifs et durables."
               : "Yoshimyra designs mobile apps, web platforms, and SaaS tools to turn your ideas into intuitive, durable, and impactful products."}
           </motion.p>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-sm uppercase tracking-wide font-semibold text-[#00C896] mb-8"
-          >
-            {slogan}
-          </motion.p>
+          <div className="flex flex-col items-center gap-2 mb-8">
+            <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#00C896]/10 text-[#00C896] border border-[#00C896] animate-bounce">
+              WYBIWG
+            </span>
+            <motion.p
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.6, type: "spring" }}
+              className="text-sm md:text-base font-semibold uppercase tracking-wide text-[#85efd5] mb-8"
+            >
+              {slogan}
+            </motion.p>
+          </div>
 
           <LocalizedLink
             href="/products"
