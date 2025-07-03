@@ -35,7 +35,7 @@ export default function PricingPage() {
             href="/contact"
             className="w-full px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold"
           >
-            Request a quote
+            Get a free quote
           </LocalizedLink>
         </div>
 
