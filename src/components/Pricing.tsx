@@ -140,7 +140,35 @@ const packages = [
       cta: "Build my network",
     },
   },
-
+  {
+    key: "ai-platform",
+    fr: {
+      title: "Plateforme IA & Agents IA",
+      desc: "Création de plateformes IA personnalisées et agents intelligents pour automatiser vos processus.",
+      items: [
+        "✅ Plateforme IA sur mesure avec intégration LLM",
+        "✅ Agents IA conversationnels (chatbots intelligents)",
+        "✅ Automatisation de processus métier",
+        "✅ API et intégrations personnalisées",
+        "✅ Livraison en 6 à 8 semaines",
+      ],
+      price: "4 500 €",
+      cta: "Créer ma plateforme IA",
+    },
+    en: {
+      title: "AI Platform & AI Agents",
+      desc: "Custom AI platforms and intelligent agents to automate your business processes.",
+      items: [
+        "✅ Custom AI platform with LLM integration",
+        "✅ Conversational AI agents (smart chatbots)",
+        "✅ Business process automation",
+        "✅ Custom APIs and integrations",
+        "✅ Delivery in 6-8 weeks",
+      ],
+      price: "€4,500",
+      cta: "Create my AI platform",
+    },
+  },
   {
     key: "maintenance",
     fr: {
