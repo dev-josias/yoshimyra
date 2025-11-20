@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 import LocalizedLink from "@/components/LocalizedLink";
 
 const packages = [
@@ -42,7 +43,7 @@ const packages = [
         "✅ Admin dashboard",
         "✅ Livraison en 10 à 15 jours ouvrés",
       ],
-      price: "1 200 €",
+      price: "1 200 €",
       cta: "Lancer ma boutique",
     },
     en: {
@@ -69,8 +70,8 @@ const packages = [
         "✅ Firebase DB & hébergement",
         "✅ Livraison en 3 semaines",
       ],
-      price: "1 800 €",
-      cta: "Commander l’app",
+      price: "1 800 €",
+      cta: "Commander l'app",
     },
     en: {
       title: "Basic Mobile App",
@@ -96,7 +97,7 @@ const packages = [
         "✅ Dashboard admin complet",
         "✅ Livraison en 4 semaines",
       ],
-      price: "2 500 €",
+      price: "2 500 €",
       cta: "Commander la web app",
     },
     en: {
@@ -119,11 +120,11 @@ const packages = [
       desc: "App de type réseau social avec profils, posts, likes.",
       items: [
         "✅ Authentification, profils utilisateurs",
-        "✅ Fil d’actualité avec posts & likes",
+        "✅ Fil d'actualité avec posts & likes",
         "✅ Notifications & messagerie (option)",
         "✅ Livraison en 5 à 6 semaines",
       ],
-      price: "3 500 €",
+      price: "3 500 €",
       cta: "Créer mon réseau",
     },
     en: {
@@ -174,48 +175,105 @@ export default function PricingPage() {
   const isFr = !pathname?.startsWith("/en");
 
   return (
-    <main className="min-h-screen bg-white text-gray-900 p-6">
-      <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-[#1B4F72] mb-2">
-          {isFr ? "Nos Packs Clés en Main" : "Our Fixed-Price Packages"}
-        </h1>
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-          {isFr
-            ? "Tous nos prix sont transparents avec des livrables digitaux clairement définis."
-            : "All pricing is transparent with clearly defined digital deliverables."}
-        </p>
+    <main className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
+      {/* Hero section */}
+      <section className="py-20 px-6 text-center bg-gradient-to-br from-[#00C896]/5 via-transparent to-[#5ED6E5]/5">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+            {isFr ? "Nos Packs Clés en Main" : "Our Fixed-Price Packages"}
+          </h1>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            {isFr
+              ? "Tous nos prix sont transparents avec des livrables digitaux clairement définis."
+              : "All pricing is transparent with clearly defined digital deliverables."}
+          </p>
+        </motion.div>
       </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {packages.map((p) => {
-          const content = isFr ? p.fr : p.en;
-          return (
-            <div
-              key={p.key}
-              className="border rounded-xl p-6 shadow hover:shadow-lg transition flex flex-col"
-            >
-              <h2 className="text-xl font-semibold mb-2 text-[#1B4F72]">
-                {content.title}
-              </h2>
-              <p className="text-gray-600 mb-4">{content.desc}</p>
-              <ul className="text-sm text-gray-700 space-y-2 mb-6">
-                {content.items.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-              <p className="text-2xl font-bold text-[#00C896] mb-4">
-                {content.price}
-              </p>
-              <LocalizedLink
-                href="/contact"
-                className="w-full mt-auto px-4 py-2 rounded bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white font-semibold text-center"
+      {/* Pricing cards */}
+      <section className="py-12 px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {packages.map((p, index) => {
+            const content = isFr ? p.fr : p.en;
+            const isPopular = p.key === "ecommerce" || p.key === "web-app-pro";
+
+            return (
+              <motion.div
+                key={p.key}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                className={`relative flex flex-col h-full rounded-2xl overflow-hidden transition-all duration-300 ${
+                  isPopular
+                    ? "bg-gradient-to-br from-[#00C896]/10 to-[#5ED6E5]/10 border-2 border-[#00C896] shadow-xl scale-105"
+                    : "bg-white border border-slate-200 shadow-lg hover:shadow-xl hover:scale-105"
+                }`}
               >
-                {content.cta}
-              </LocalizedLink>
-            </div>
-          );
-        })}
-      </div>
+                {isPopular && (
+                  <div className="absolute top-0 right-0 bg-gradient-to-r from-[#00C896] to-[#5ED6E5] text-white text-xs font-bold px-4 py-1 rounded-bl-lg">
+                    {isFr ? "Populaire" : "Popular"}
+                  </div>
+                )}
+
+                <div className="p-8 flex flex-col h-full">
+                  <h2 className="text-2xl font-bold mb-3 text-slate-900">
+                    {content.title}
+                  </h2>
+                  <p className="text-slate-600 mb-6 leading-relaxed">
+                    {content.desc}
+                  </p>
+
+                  <ul className="space-y-3 mb-8 flex-grow">
+                    {content.items.map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-3 text-slate-700"
+                      >
+                        <svg
+                          className="w-5 h-5 text-[#00C896] flex-shrink-0 mt-0.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span className="text-sm leading-relaxed">
+                          {item.replace("✅ ", "")}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-auto">
+                    <p className="text-3xl font-bold text-[#00C896] mb-6">
+                      {content.price}
+                    </p>
+                    <LocalizedLink
+                      href="/contact"
+                      className={`block w-full px-6 py-3 rounded-xl text-white font-semibold text-center transition-all duration-300 ${
+                        isPopular
+                          ? "bg-gradient-to-r from-[#00C896] to-[#5ED6E5] hover:shadow-lg hover:shadow-[#00C896]/30 hover:scale-105"
+                          : "bg-gradient-to-r from-[#00C896] to-[#5ED6E5] hover:shadow-lg hover:shadow-[#00C896]/20 hover:scale-105"
+                      }`}
+                    >
+                      {content.cta}
+                    </LocalizedLink>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+      </section>
     </main>
   );
 }
